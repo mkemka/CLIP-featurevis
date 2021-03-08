@@ -10,7 +10,7 @@ class CLIPImage(Model):
     def __init__(self):
         self.model_name = "RN50_4x"
         self.image_shape = [288, 288, 3]
-        self.model_path = "https://openaipublic.blob.core.windows.net/clip/tf/RN50_4x/084ee9c176da32014b0ebe42cd7ca66e/image32.pb"
+        self.model_path = "image32.pb"
 
     def load(self, inp = None):
         import tensorflow as tf
@@ -27,7 +27,7 @@ class CLIPText(Model):
 
     def __init__(self):
         self.model_name = f"RN50_4x_text"
-        self.model_path = "https://openaipublic.blob.core.windows.net/clip/tf/RN50_4x/da21bc82c7bba068aa8163333438354c/text32.pb"
+        self.model_path = "text32.pb"
 
     def load(self, O = None):
         import tensorflow as tf
